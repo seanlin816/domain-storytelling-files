@@ -18,6 +18,34 @@
   "dst": [
     {
       "type": "domainStory:activity",
+      "name": "在",
+      "id": "connection_1712",
+      "pickedColor": "black",
+      "number": null,
+      "waypoints": [
+        {
+          "original": {
+            "x": 485,
+            "y": 608
+          },
+          "x": 485,
+          "y": 655
+        },
+        {
+          "original": {
+            "x": 485,
+            "y": 878
+          },
+          "x": 485,
+          "y": 840
+        }
+      ],
+      "source": "shape_2371",
+      "target": "shape_4794",
+      "multipleNumberAllowed": false
+    },
+    {
+      "type": "domainStory:activity",
       "name": "選了",
       "id": "connection_3025",
       "pickedColor": "black",
@@ -113,7 +141,7 @@
             "y": 268
           },
           "x": 513,
-          "y": 291
+          "y": 329
         },
         {
           "original": {
@@ -242,6 +270,34 @@
     },
     {
       "type": "domainStory:activity",
+      "name": "紀錄",
+      "id": "connection_8716",
+      "pickedColor": "black",
+      "number": 7,
+      "waypoints": [
+        {
+          "original": {
+            "x": 485,
+            "y": 268
+          },
+          "x": 485,
+          "y": 315
+        },
+        {
+          "original": {
+            "x": 485,
+            "y": 608
+          },
+          "x": 485,
+          "y": 570
+        }
+      ],
+      "source": "shape_5348",
+      "target": "shape_2371",
+      "multipleNumberAllowed": false
+    },
+    {
+      "type": "domainStory:activity",
       "name": "給",
       "id": "connection_9407",
       "pickedColor": "black",
@@ -333,6 +389,13 @@
     },
     {
       "type": "domainStory:workObjectDocument",
+      "name": "客人對物件的意見",
+      "id": "shape_2371",
+      "x": 447,
+      "y": 570
+    },
+    {
+      "type": "domainStory:workObjectDocument",
       "name": "帶看物件時間",
       "id": "shape_3732",
       "x": 751,
@@ -344,6 +407,13 @@
       "id": "shape_3737",
       "x": 751,
       "y": 483
+    },
+    {
+      "type": "domainStory:workObjectDocument",
+      "name": "筆記本",
+      "id": "shape_4794",
+      "x": 447,
+      "y": 840
     },
     {
       "type": "domainStory:actorPerson",
