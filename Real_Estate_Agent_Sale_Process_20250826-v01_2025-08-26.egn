@@ -18,6 +18,34 @@
   "dst": [
     {
       "type": "domainStory:activity",
+      "name": "By",
+      "id": "connection_0499",
+      "pickedColor": "black",
+      "number": null,
+      "waypoints": [
+        {
+          "original": {
+            "x": 789,
+            "y": 889
+          },
+          "x": 803,
+          "y": 861
+        },
+        {
+          "original": {
+            "x": 1100,
+            "y": 268
+          },
+          "x": 1076,
+          "y": 315
+        }
+      ],
+      "source": "shape_2371",
+      "target": "shape_9450",
+      "multipleNumberAllowed": false
+    },
+    {
+      "type": "domainStory:activity",
       "name": "在",
       "id": "connection_1712",
       "pickedColor": "black",
@@ -25,19 +53,19 @@
       "waypoints": [
         {
           "original": {
-            "x": 485,
-            "y": 608
+            "x": 789,
+            "y": 889
           },
-          "x": 485,
-          "y": 655
+          "x": 789,
+          "y": 936
         },
         {
           "original": {
-            "x": 485,
-            "y": 878
+            "x": 789,
+            "y": 1032
           },
-          "x": 485,
-          "y": 840
+          "x": 789,
+          "y": 994
         }
       ],
       "source": "shape_2371",
@@ -56,16 +84,16 @@
             "x": 1100,
             "y": 268
           },
-          "x": 1100,
-          "y": 315
+          "x": 1143,
+          "y": 268
         },
         {
           "original": {
-            "x": 1100,
-            "y": 639
+            "x": 1473,
+            "y": 268
           },
-          "x": 1100,
-          "y": 601
+          "x": 1435,
+          "y": 268
         }
       ],
       "source": "shape_9450",
@@ -270,7 +298,7 @@
     },
     {
       "type": "domainStory:activity",
-      "name": "紀錄",
+      "name": "紀錄整理",
       "id": "connection_8716",
       "pickedColor": "black",
       "number": 7,
@@ -280,16 +308,16 @@
             "x": 485,
             "y": 268
           },
-          "x": 485,
-          "y": 315
+          "x": 502,
+          "y": 303
         },
         {
           "original": {
-            "x": 485,
-            "y": 608
+            "x": 789,
+            "y": 889
           },
-          "x": 485,
-          "y": 570
+          "x": 770,
+          "y": 851
         }
       ],
       "source": "shape_5348",
@@ -384,15 +412,15 @@
       "type": "domainStory:workObjectDocument",
       "name": "有興趣的物件",
       "id": "shape_1672",
-      "x": 1062,
-      "y": 601
+      "x": 1435,
+      "y": 230
     },
     {
       "type": "domainStory:workObjectDocument",
       "name": "客人對物件的意見",
       "id": "shape_2371",
-      "x": 447,
-      "y": 570
+      "x": 751,
+      "y": 851
     },
     {
       "type": "domainStory:workObjectDocument",
@@ -412,8 +440,8 @@
       "type": "domainStory:workObjectDocument",
       "name": "筆記本",
       "id": "shape_4794",
-      "x": 447,
-      "y": 840
+      "x": 751,
+      "y": 994
     },
     {
       "type": "domainStory:actorPerson",
