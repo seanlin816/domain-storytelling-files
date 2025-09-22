@@ -1,0 +1,511 @@
+{
+  "domain": {
+    "name": "default",
+    "actors": {
+      "Person": "<svg viewBox=\"0 0 24 26\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M12 5.9c1.16 0 2.1.94 2.1 2.1s-.94 2.1-2.1 2.1S9.9 9.16 9.9 8s.94-2.1 2.1-2.1m0 9c2.97 0 6.1 1.46 6.1 2.1v1.1H5.9V17c0-.64 3.13-2.1 6.1-2.1M12 4C9.79 4 8 5.79 8 8s1.79 4 4 4 4-1.79 4-4-1.79-4-4-4zm0 9c-2.67 0-8 1.34-8 4v3h16v-3c0-2.66-5.33-4-8-4z\"/><path d=\"M0 0h24v24H0z\" fill=\"none\"/></svg>",
+      "Group": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"48\" viewBox=\"0 0 24 26\"><path d=\"M0 0h24v24H0z\" fill=\"none\"/><path d=\"M16.5 13c-1.2 0-3.07.34-4.5 1-1.43-.67-3.3-1-4.5-1C5.33 13 1 14.08 1 16.25V19h22v-2.75c0-2.17-4.33-3.25-6.5-3.25zm-4 4.5h-10v-1.25c0-.54 2.56-1.75 5-1.75s5 1.21 5 1.75v1.25zm9 0H14v-1.25c0-.46-.2-.86-.52-1.22.88-.3 1.96-.53 3.02-.53 2.44 0 5 1.21 5 1.75v1.25zM7.5 12c1.93 0 3.5-1.57 3.5-3.5S9.43 5 7.5 5 4 6.57 4 8.5 5.57 12 7.5 12zm0-5.5c1.1 0 2 .9 2 2s-.9 2-2 2-2-.9-2-2 .9-2 2-2zm9 5.5c1.93 0 3.5-1.57 3.5-3.5S18.43 5 16.5 5 13 6.57 13 8.5s1.57 3.5 3.5 3.5zm0-5.5c1.1 0 2 .9 2 2s-.9 2-2 2-2-.9-2-2 .9-2 2-2z\"/></svg>",
+      "System": "<svg viewBox=\"0 0 24 26\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M20,18c1.1,0,2-0.9,2-2V6c0-1.1-0.9-2-2-2H4C2.9,4,2,4.9,2,6v10c0,1.1,0.9,2,2,2H0v2h24v-2H20z M4,6h16v10H4V6z\"/></svg>"
+    },
+    "workObjects": {
+      "Document": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 26\"><path fill=\"none\" d=\"M0 0h24v24H0V0z\"/><path d=\"M8 16h8v2H8zm0-4h8v2H8zm6-10H6c-1.1 0-2 .9-2 2v16c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zm4 18H6V4h7v5h5v11z\"/></svg>",
+      "Folder": "<svg viewBox=\"0 0 24 26\" xmlns=\"http://www.w3.org/2000/svg\"><path fill=\"none\" d=\"M0,0h24v24H0V0z\"/><path d=\"M9.17,6l2,2H20v10L4,18V6H9.17 M10,4H4C2.9,4,2.01,4.9,2.01,6L2,18c0,1.1,0.9,2,2,2h16c1.1,0,2-0.9,2-2V8c0-1.1-0.9-2-2-2 h-8L10,4L10,4z\"/></svg>",
+      "Call": "<svg viewBox=\"0 0 24 26\" xmlns=\"http://www.w3.org/2000/svg\"><path fill=\"none\" d=\"M0,0h24v24H0V0z\"/><path d=\"M6.54,5C6.6,5.89,6.75,6.76,6.99,7.59l-1.2,1.2C5.38,7.59,5.12,6.32,5.03,5H6.54 M16.4,17.02c0.85,0.24,1.72,0.39,2.6,0.45 v1.49c-1.32-0.09-2.59-0.35-3.8-0.75L16.4,17.02 M7.5,3H4C3.45,3,3,3.45,3,4c0,9.39,7.61,17,17,17c0.55,0,1-0.45,1-1v-3.49\tc0-0.55-0.45-1-1-1c-1.24,0-2.45-0.2-3.57-0.57c-0.1-0.04-0.21-0.05-0.31-0.05c-0.26,0-0.51,0.1-0.71,0.29l-2.2,2.2 c-2.83-1.45-5.15-3.76-6.59-6.59l2.2-2.2C9.1,8.31,9.18,7.92,9.07,7.57C8.7,6.45,8.5,5.25,8.5,4C8.5,3.45,8.05,3,7.5,3L7.5,3z\"/></svg>",
+      "Email": "<svg viewBox=\"0 0 24 26\" xmlns=\"http://www.w3.org/2000/svg\"><path fill=\"none\" d=\"M0,0h24v24H0V0z\"/><path fill-opacity=\"0.9\" d=\"M12,1.95c-5.52,0-10,4.48-10,10s4.48,10,10,10h5v-2h-5c-4.34,0-8-3.66-8-8s3.66-8,8-8s8,3.66,8,8v1.43 c0,0.79-0.71,1.57-1.5,1.57S17,14.17,17,13.38v-1.43c0-2.76-2.24-5-5-5s-5,2.24-5,5s2.24,5,5,5c1.38,0,2.64-0.56,3.54-1.47 c0.65,0.89,1.77,1.47,2.96,1.47c1.97,0,3.5-1.6,3.5-3.57v-1.43C22,6.43,17.52,1.95,12,1.95z M12,14.95c-1.66,0-3-1.34-3-3 s1.34-3,3-3s3,1.34,3,3S13.66,14.95,12,14.95z\"/></svg>",
+      "Conversation": "<svg height=\"48\" viewBox=\"0 0 24 26\" width=\"24\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M0 0h24v24H0V0z\" fill=\"none\"/><path d=\"M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm0 14H6l-2 2V4h16v12z\"/></svg>",
+      "Info": "<svg height=\"48\" viewBox=\"0 0 24 26\" width=\"24\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M0 0h24v24H0z\" fill=\"none\"/><path d=\"M11 17h2v-6h-2v6zm1-15C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zM11 9h2V7h-2v2z\"/></svg>",
+      "Mobile-Sms-icon-custom": "data:image/png;base64,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"
+    }
+  },
+  "dst": [
+    {
+      "type": "domainStory:activity",
+      "name": "to",
+      "id": "connection_0652",
+      "pickedColor": "black",
+      "number": null,
+      "waypoints": [
+        {
+          "original": {
+            "x": 503,
+            "y": 171
+          },
+          "x": 546,
+          "y": 171
+        },
+        {
+          "original": {
+            "x": 725,
+            "y": 171
+          },
+          "x": 718,
+          "y": 171
+        }
+      ],
+      "source": "shape_1067",
+      "target": "shape_2022",
+      "multipleNumberAllowed": false
+    },
+    {
+      "type": "domainStory:connection",
+      "name": "",
+      "id": "connection_0710",
+      "waypoints": [
+        {
+          "original": {
+            "x": 820,
+            "y": 301
+          },
+          "x": 782,
+          "y": 346
+        },
+        {
+          "original": {
+            "x": 756,
+            "y": 376
+          },
+          "x": 769,
+          "y": 361
+        }
+      ],
+      "source": "shape_6225",
+      "target": "shape_7320"
+    },
+    {
+      "type": "domainStory:activity",
+      "name": "to",
+      "id": "connection_1387",
+      "pickedColor": "black",
+      "number": null,
+      "waypoints": [
+        {
+          "original": {
+            "x": 597,
+            "y": 301
+          },
+          "x": 620,
+          "y": 282
+        },
+        {
+          "original": {
+            "x": 756,
+            "y": 171
+          },
+          "x": 718,
+          "y": 202
+        }
+      ],
+      "source": "shape_1538",
+      "target": "shape_2022",
+      "multipleNumberAllowed": false
+    },
+    {
+      "type": "domainStory:activity",
+      "name": "",
+      "id": "connection_2181",
+      "pickedColor": "black",
+      "number": 1,
+      "waypoints": [
+        {
+          "original": {
+            "x": 282,
+            "y": 171
+          },
+          "x": 325,
+          "y": 171
+        },
+        {
+          "original": {
+            "x": 503,
+            "y": 171
+          },
+          "x": 465,
+          "y": 171
+        }
+      ],
+      "source": "shape_9331",
+      "target": "shape_1067"
+    },
+    {
+      "type": "domainStory:connection",
+      "name": "",
+      "id": "connection_2261",
+      "waypoints": [
+        {
+          "original": {
+            "x": 949,
+            "y": 171
+          },
+          "x": 949,
+          "y": 133
+        },
+        {
+          "original": {
+            "x": 949,
+            "y": 66
+          },
+          "x": 949,
+          "y": 87
+        }
+      ],
+      "source": "shape_3714",
+      "target": "shape_4226"
+    },
+    {
+      "type": "domainStory:activity",
+      "name": "to",
+      "id": "connection_2751",
+      "pickedColor": "black",
+      "number": null,
+      "waypoints": [
+        {
+          "original": {
+            "x": 503,
+            "y": 51
+          },
+          "x": 465,
+          "y": 72
+        },
+        {
+          "original": {
+            "x": 282,
+            "y": 171
+          },
+          "x": 310,
+          "y": 156
+        }
+      ],
+      "source": "shape_6181",
+      "target": "shape_9331",
+      "multipleNumberAllowed": false
+    },
+    {
+      "type": "domainStory:activity",
+      "name": "介紹",
+      "id": "connection_3325",
+      "pickedColor": "black",
+      "number": 3,
+      "waypoints": [
+        {
+          "original": {
+            "x": 756,
+            "y": 171
+          },
+          "x": 718,
+          "y": 153
+        },
+        {
+          "original": {
+            "x": 503,
+            "y": 51
+          },
+          "x": 538,
+          "y": 68
+        }
+      ],
+      "source": "shape_2022",
+      "target": "shape_6181",
+      "multipleNumberAllowed": false
+    },
+    {
+      "type": "domainStory:activity",
+      "name": "取得",
+      "id": "connection_3645",
+      "pickedColor": "black",
+      "number": 2,
+      "waypoints": [
+        {
+          "original": {
+            "x": 756,
+            "y": 171
+          },
+          "x": 799,
+          "y": 171
+        },
+        {
+          "original": {
+            "x": 949,
+            "y": 171
+          },
+          "x": 911,
+          "y": 171
+        }
+      ],
+      "source": "shape_2022",
+      "target": "shape_3714",
+      "multipleNumberAllowed": false
+    },
+    {
+      "type": "domainStory:activity",
+      "name": "and",
+      "id": "connection_3809",
+      "pickedColor": "black",
+      "number": null,
+      "waypoints": [
+        {
+          "original": {
+            "x": 820,
+            "y": 301
+          },
+          "x": 863,
+          "y": 302
+        },
+        {
+          "original": {
+            "x": 969,
+            "y": 303
+          },
+          "x": 911,
+          "y": 302
+        }
+      ],
+      "source": "shape_6225",
+      "target": "shape_9588",
+      "multipleNumberAllowed": false
+    },
+    {
+      "type": "domainStory:activity",
+      "name": "on",
+      "id": "connection_3908",
+      "pickedColor": "black",
+      "number": null,
+      "waypoints": [
+        {
+          "original": {
+            "x": 967,
+            "y": 301
+          },
+          "x": 992,
+          "y": 301
+        },
+        {
+          "original": {
+            "x": 1087,
+            "y": 301
+          },
+          "x": 1049,
+          "y": 301
+        }
+      ],
+      "source": "shape_9588",
+      "target": "shape_7919",
+      "multipleNumberAllowed": false
+    },
+    {
+      "type": "domainStory:activity",
+      "name": "for",
+      "id": "connection_4627",
+      "pickedColor": "black",
+      "number": null,
+      "waypoints": [
+        {
+          "original": {
+            "x": 426,
+            "y": 301
+          },
+          "x": 469,
+          "y": 301
+        },
+        {
+          "original": {
+            "x": 597,
+            "y": 301
+          },
+          "x": 559,
+          "y": 301
+        }
+      ],
+      "source": "shape_2653",
+      "target": "shape_1538",
+      "multipleNumberAllowed": false
+    },
+    {
+      "type": "domainStory:activity",
+      "name": "of",
+      "id": "connection_7524",
+      "pickedColor": "black",
+      "number": null,
+      "waypoints": [
+        {
+          "original": {
+            "x": 503,
+            "y": 51
+          },
+          "x": 503,
+          "y": 13
+        },
+        {
+          "original": {
+            "x": 503,
+            "y": -63
+          },
+          "x": 503,
+          "y": -16
+        }
+      ],
+      "source": "shape_6181",
+      "target": "shape_6505",
+      "multipleNumberAllowed": false
+    },
+    {
+      "type": "domainStory:activity",
+      "name": "回饋",
+      "id": "connection_8573",
+      "pickedColor": "black",
+      "number": 4,
+      "waypoints": [
+        {
+          "original": {
+            "x": 282,
+            "y": 171
+          },
+          "x": 309,
+          "y": 200
+        },
+        {
+          "original": {
+            "x": 426,
+            "y": 301
+          },
+          "x": 388,
+          "y": 267
+        }
+      ],
+      "source": "shape_9331",
+      "target": "shape_2653",
+      "multipleNumberAllowed": false
+    },
+    {
+      "type": "domainStory:activity",
+      "name": "速記",
+      "id": "connection_9253",
+      "pickedColor": "black",
+      "number": 5,
+      "waypoints": [
+        {
+          "original": {
+            "x": 756,
+            "y": 171
+          },
+          "x": 773,
+          "y": 211
+        },
+        {
+          "original": {
+            "x": 820,
+            "y": 301
+          },
+          "x": 801,
+          "y": 263
+        }
+      ],
+      "source": "shape_2022",
+      "target": "shape_6225",
+      "multipleNumberAllowed": false
+    },
+    {
+      "type": "domainStory:workObjectConversation",
+      "name": "物件條件",
+      "id": "shape_1067",
+      "x": 465,
+      "y": 133
+    },
+    {
+      "type": "domainStory:workObjectDocument",
+      "name": "待售物件資訊",
+      "id": "shape_1538",
+      "x": 559,
+      "y": 263
+    },
+    {
+      "type": "domainStory:actorPerson",
+      "name": "駐店房仲",
+      "id": "shape_2022",
+      "x": 718,
+      "y": 133
+    },
+    {
+      "type": "domainStory:workObjectDocument",
+      "name": "購屋需求看法",
+      "id": "shape_2653",
+      "x": 388,
+      "y": 263
+    },
+    {
+      "type": "domainStory:workObjectDocument",
+      "name": "待售物件資訊清單",
+      "id": "shape_3714",
+      "x": 911,
+      "y": 133
+    },
+    {
+      "type": "domainStory:textAnnotation",
+      "name": "",
+      "id": "shape_4226",
+      "x": 899,
+      "y": 44,
+      "text": "待售物件資訊簿或代收物件DM",
+      "number": 43,
+      "height": 43,
+      "width": 100
+    },
+    {
+      "type": "domainStory:workObjectDocument",
+      "name": "待售物件資訊",
+      "id": "shape_6181",
+      "x": 465,
+      "y": 13
+    },
+    {
+      "type": "domainStory:workObjectConversation",
+      "name": "客戶需求資訊",
+      "id": "shape_6225",
+      "x": 782,
+      "y": 263
+    },
+    {
+      "type": "domainStory:workObjectDocument",
+      "name": "待售物件資訊清單",
+      "id": "shape_6505",
+      "x": 465,
+      "y": -101
+    },
+    {
+      "type": "domainStory:textAnnotation",
+      "name": "",
+      "id": "shape_7320",
+      "x": 706,
+      "y": 361,
+      "text": "客戶尚在現場，紀錄其回饋之關鍵字詞後，重複3-5步驟。",
+      "number": 72,
+      "height": 72,
+      "width": 100
+    },
+    {
+      "type": "domainStory:workObjectDocument",
+      "name": "待售物件資訊",
+      "id": "shape_7919",
+      "x": 1049,
+      "y": 263
+    },
+    {
+      "type": "domainStory:actorPerson",
+      "name": "買家客戶",
+      "id": "shape_9331",
+      "x": 244,
+      "y": 133
+    },
+    {
+      "type": "domainStory:workObjectConversation",
+      "name": "客戶資訊",
+      "id": "shape_9588",
+      "x": 911,
+      "y": 263
+    },
+    {
+      "info": "Senerio: While real-estate sales on duty in the store, buyer is coming into store to inquiry products, sales introduce products to buyer and keep notes of response\nScope: COARSE-GRAINED、PURE、AS-IS"
+    },
+    {
+      "version": "3.0.0"
+    }
+  ]
+}
